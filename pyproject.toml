@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luojiu"
+version = "1.0.0"
+description = "Local CPU continual-learning group conversation environment"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+luojiu = "luojiu.__main__:main"
+
+[tool.setuptools.package-data]
+luojiu = ["web/*"]
